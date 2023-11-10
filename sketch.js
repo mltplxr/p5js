@@ -11,12 +11,12 @@ function draw() {
   background(0);
   
   if (reverse) {
-    x--;
+    x -= 0.5; // Slower decrement
     if (x < 0) {
       reverse = false;  
     }
   } else {
-    x++;
+    x += 0.5; // Slower increment
     if (x > 360) {
       reverse = true;
     }
